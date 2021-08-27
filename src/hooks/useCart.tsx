@@ -76,6 +76,7 @@ export function CartProvider({ children }: CartProviderProps): JSX.Element {
 
       if (!productAlreadyInCart) {
         toast.error('Erro na remoção do produto');
+        return;
       }
 
       const productToRemoveIndex = cartToUpdate
